@@ -1,0 +1,52 @@
+{
+  "expo": {
+    "name": "TallerIQ",
+    "slug": "talleriq",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "scheme": "talleriq",
+    "userInterfaceStyle": "light",
+
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.talleriq.app"
+    },
+
+    "android": {
+      "adaptiveIcon": {
+        "backgroundColor": "#0B1F3A",
+        "foregroundImage": "./assets/android-icon-foreground.png",
+        "backgroundImage": "./assets/android-icon-background.png",
+        "monochromeImage": "./assets/android-icon-monochrome.png"
+      },
+      "package": "com.talleriq.app",
+      "predictiveBackGestureEnabled": false
+    },
+
+    "web": {
+      "favicon": "./assets/favicon.png",
+      "bundler": "metro"
+    },
+
+    "plugins": [
+      [
+        "expo-splash-screen",
+        {
+          "image": "./assets/splash-icon.png",
+          "resizeMode": "contain",
+          "backgroundColor": "#0B1F3A"
+        }
+      ],
+      "expo-router",
+      "expo-secure-store",
+      "expo-font",
+      "expo-sqlite"
+    ],
+
+    "experiments": {
+    "typedRoutes": false,
+    "tsconfigPaths": true
+  }
+  }
+}
